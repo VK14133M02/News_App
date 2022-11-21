@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <div id="link">
+            <a href="./index.html"><button>Home</button></a>
+            <a href="./sport.html"><button>Sports</button></a>
+            <a href="./technology.html"><button>Technology</button></a>
+            <a href="./entertainment.html"><button>Entertainment</button></a>
+        </div>
+        <div id="apple">
+            <input type="text" id="tesla" placeholder="tesla/apple">
+            <button onclick="getNews()">Submit</button>
+        </div>
+        <div id="news">
+            <select id="country">
+                <option value="in">Country</option>
+                <option value="in">India</option>
+                <option value="ch">China</option>
+                <option value="nz">Newziland</option>
+                <option value="us">USA</option>
+                <option value="uk">England</option>
+            </select>            
+        </div>
+    </div>
+    <div id="container"></div>
+    <div id="buttons">
+        <button onclick="previous()"><< Previous</button>
+        <button onclick="next()">Next >></button>
+    </div>
+</body>
+<script src="./script/sport.js"></script>
+</html>
+
